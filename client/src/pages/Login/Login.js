@@ -4,6 +4,7 @@ import { Link, Redirect } from 'react-router-dom';
 import API from '../../lib/API';
 import AuthContext from '../../contexts/AuthContext';
 import LoginForm from '../../components/LoginForm/LoginForm';
+import './login.css';
 
 class Login extends Component {
   static contextType = AuthContext;
@@ -49,20 +50,20 @@ class Login extends Component {
     return (
       <div className='Login'>
         <div className='row'>
-          <div className='col'>
+          <div className='col-sm-4'>
             <h1>Login</h1>
           </div>
         </div>
         {this.state.error &&
           <div className='row'>
-            <div className='col'>
+            <div className='col-sm-4'>
               <div className='alert alert-danger mb-3' role='alert'>
                 {this.state.error}
               </div>
             </div>
           </div>}
         <div className='row'>
-          <div className='col'>
+          <div className='col-sm-4'>
             <LoginForm onSubmit={this.handleSubmit} />
             <div className='mt-3'>Don't have an account? <Link to='/register'>Click here to register.</Link></div>
           </div>

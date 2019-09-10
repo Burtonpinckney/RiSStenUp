@@ -1,0 +1,21 @@
+.Register {
+    background-image: url("./Images/jordandunk.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    height: 100%;
+}
+/* .Regbox {
+    background-color: yellow;
+} */
+.RegistrationForm {
+    background-color: yellow;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+.card {
+    background-color: black;
+}

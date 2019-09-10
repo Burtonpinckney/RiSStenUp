@@ -1,0 +1,68 @@
+.NCState {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+.Panthers {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: aqua;
+    text-align: center;
+}
+.UNC {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color:lightblue;
+    text-align: center;
+}
+.Hornets {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(13, 216, 216);
+    text-align: center;
+}
+.Duke {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+.Canes {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: red;
+    text-align: center;
+    color: white;
+}
+.Wake {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: yellow;
+    text-align: center;
+}
+.Knights {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(192, 167, 23);
+    text-align: center;
+    color: white;
+}

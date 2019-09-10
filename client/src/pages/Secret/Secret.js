@@ -5,9 +5,11 @@ import Feed from '../../components/Feed/Feed';
 import Sidebar from '../../components/Sidebar/sidebar';
 import Content from '../../components/Content/content';
 // import Button from 'react-bootstrap/Button';
+// import { Button } from 'react-native-elements';
+import Button from '@material-ui/core/Button';
 import API from '../../lib/API';
 import AuthContext from '../../contexts/AuthContext';
-import './Secret.css'
+import './Secret.css';
 class Secret extends Component {
   static contextType = AuthContext;
 
@@ -34,7 +36,7 @@ class Secret extends Component {
     return (
       <div className='Secret'>
         {/* <img src={Image} className="img"/> */}
-        <div className='row'>
+        <div className='row content'>
           {/* <div className='col'>
             {this.state.isLoading
               ? <div className='alert alert-success'>Loading...</div>
@@ -53,8 +55,8 @@ class Secret extends Component {
           </div>
           <div className='col-sm-6'>
             <Content/>
-            {/* <Button variant="warning">Warning</Button>
-            <Button variant="warning">Warning</Button> */}
+            <Button id="pauseButton" class="pause" type="submit">Pause</Button>
+            <Button id="resumeButton" class="resume" type="submit">Resume</Button>
           </div>
         </div>
       </div>

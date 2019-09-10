@@ -1,4 +1,4 @@
-.container{
+/* .container{
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -8,33 +8,25 @@
     width: 100%;
     margin: 0px;
     padding: 0px;
-}
-.Secret{
-    background-image: url("./Image/PantherStadium.jpg"); /* The image used */
+} */
+.Login{
+    background-image: url("./Images/baseballdive4.jpg"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     height: 100%;
+    color: white;
 }
 
-.pause {
-    width: 100px;
-    height: 50px;
-    background-color: red;
-    color: white;
-    font-size: 20px;
-    margin: 20px;
-}
-.resume {
-    width: 100px;
-    height: 50px;
-    background-color: blue;
-    color: white;
-    font-size: 20px;
-    margin: 20px;
+.LoginForm {
+
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
 }
 
-.content {
-    padding-top: 3%;
+.nav-link {
+    font-size: 25px;
+    font-weight: 800;
 }

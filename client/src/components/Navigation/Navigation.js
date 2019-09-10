@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import AuthContext from '../../contexts/AuthContext';
 import AuthDropdown from '../../components/AuthDropdown/AuthDropdown';
+import './navigation.css';
 
 class Navigation extends Component {
   static contextType = AuthContext;
@@ -25,11 +26,15 @@ class Navigation extends Component {
 
     return (
       <div className='Navigation'>
-        <nav className='navbar navbar-expand-lg navbar-light bg-light'>
-          <Link className='navbar-brand' to='#'>RiSStenUp</Link>
+        <nav className='navbar navbar-expand-lg navbar-light'>
+        
+          <Link className='navbar-brand' to='#'>
+            <img src="./RiSSlogo.png"></img>
+          </Link>
           <button className={togglerClass} onClick={this.toggleCollapse} data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
             <span className='navbar-toggler-icon'></span>
           </button>
+      
 
           <div className={targetClass} id='navbarSupportedContent'>
             <ul className='navbar-nav mr-auto'>
