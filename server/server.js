@@ -16,6 +16,7 @@ const express = require('express');
 const logger = require('morgan');
 const mongoose = require('mongoose');
 
+
 const { passport } = require('./lib/passport');
 
 //-- Constants ---------------------------------------------------------------
@@ -28,7 +29,7 @@ const app = express();
 //-- Mongoose Setup ----------------------------------------------------------
 mongoose.connect(
   process.env.MONGODB_URI ||
-  'mongodb://localhost/ProjectThree'
+  'mongodb://localhost/RSS' , { useNewUrlParser: true }
 )
 mongoose.connection.on('error', err => {
   console.log(`Mongoose connection err:\n${err}`)
@@ -52,13 +53,15 @@ app.use(require('./controllers'));
 
 //-- React catch-all ---------------------------------------------------------
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+  res.sendFile(path.join(__dirname, '/login'));
 });
 
 //-- Main --------------------------------------------------------------------
 app.listen(PORT, () => {
   console.log(`🚀 Server listening on port ${PORT}...`);
 });
+
+
 
 //-- Export to Tests ---------------------------------------------------------
 module.exports = app;

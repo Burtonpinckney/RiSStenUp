@@ -45,42 +45,42 @@ export default function Sidebar() {
       className={classes.root}
     >
       <ListItem button>
-        <div class="Panthers">
+        <div className="Panthers">
           <ListItemText primary="Panthers" />
         </div>
       </ListItem>
       <ListItem button>
-        <div class="NCState">
+        <div className="NCState">
           <ListItemText primary="NCState" />
         </div>
       </ListItem>
       <ListItem button>
-        <div class="UNC">
+        <div className="UNC">
           <ListItemText primary="North Carolina" />
         </div>
       </ListItem>
       <ListItem button>
-        <div class="Hornets">
+        <div className="Hornets">
           <ListItemText primary="Hornets" />
         </div>
       </ListItem>
       <ListItem button>
-        <div class="Duke">
+        <div className="Duke">
           <ListItemText primary="Duke" />
         </div>
       </ListItem>
       <ListItem button>
-        <div class="Canes">
+        <div className="Canes">
           <ListItemText primary="Hurricanes" />
         </div>
       </ListItem>
       <ListItem button>
-        <div class="Wake">
+        <div className="Wake">
           <ListItemText primary="Wake Forest" />
         </div>
       </ListItem>
       <ListItem button>
-        <div class="Knights">
+        <div className="Knights">
           <ListItemText primary="Charlotte Knights" />
         </div>
       </ListItem>

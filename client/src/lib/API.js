@@ -27,5 +27,16 @@ export default {
         }
       });
     }
+  },
+
+  Scraper: {
+    scrape: function(authToken) {
+      console.log('scraping <====')
+      return axios.get('/api/scrape', {
+        headers: {
+          'Authorization': `Bearer ${authToken}`
+        }
+      })
+    }
   }
 }
