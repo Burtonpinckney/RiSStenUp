@@ -28,7 +28,8 @@
     height: 100%;
     padding: 0px;
     margin: 0px;
-    background-color: rgb(13, 216, 216);
+    background-color: #260f54;
+    color: rgb(13, 216, 216);
     text-align: center;
 }
 .Duke {
