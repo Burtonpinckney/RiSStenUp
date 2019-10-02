@@ -30,9 +30,17 @@ export default {
   },
 
   Scraper: {
-    scrape: function(authToken) {
+    scrape: function(authToken,team) {
       console.log('scraping <====')
-      return axios.get('/api/scrape', {
+      return axios.get('/api/scrape/'+team, {
+        headers: {
+          'Authorization': `Bearer ${authToken}`
+        }
+      })
+    },
+    find: function(authToken){
+      console.log('finding <====')
+      return axios.get('/api/scrape/find',{
         headers: {
           'Authorization': `Bearer ${authToken}`
         }

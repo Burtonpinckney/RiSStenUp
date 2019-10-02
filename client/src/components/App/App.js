@@ -55,7 +55,7 @@ class App extends Component {
           <Navigation />
           <div className='container-fluid'>
             <Switch>
-              <Route exact path='/' component={Home} />
+              <Route exact path='/' component={Secret} />
               <Route path='/login' component={Login} />
               <Route path='/register' component={Register} />
               <PrivateRoute path='/secret' component={Secret} />

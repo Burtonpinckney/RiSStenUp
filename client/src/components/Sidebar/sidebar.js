@@ -7,6 +7,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Collapse from '@material-ui/core/Collapse';
 import './sidebar.css';
+import { propTypes } from 'react-gravatar';
 // import InboxIcon from '@material-ui/icons/MoveToInbox';
 // import DraftsIcon from '@material-ui/icons/Drafts';
 // import SendIcon from '@material-ui/icons/Send';
@@ -25,15 +26,16 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function Sidebar() {
+const Sidebar=(props)=> {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
-
+ // const teamSet = this.props.setTeam
   function handleClick() {
     setOpen(!open);
   }
 
   return (
+    
     <List
       component="nav"
       aria-labelledby="nested-list-subheader"
@@ -46,45 +48,21 @@ export default function Sidebar() {
     >
       <ListItem button>
         <div className="Panthers">
-          <ListItemText primary="Panthers" />
-        </div>
-      </ListItem>
-      <ListItem button>
-        <div className="NCState">
-          <ListItemText primary="NCState" />
-        </div>
-      </ListItem>
-      <ListItem button>
-        <div className="UNC">
-          <ListItemText primary="North Carolina" />
+          <ListItemText primary="Panthers" onClick={()=>{props.setTeam('Panthers')}} />
         </div>
       </ListItem>
       <ListItem button>
         <div className="Hornets">
-          <ListItemText primary="Hornets" />
-        </div>
-      </ListItem>
-      <ListItem button>
-        <div className="Duke">
-          <ListItemText primary="Duke" />
-        </div>
-      </ListItem>
-      <ListItem button>
-        <div className="Canes">
-          <ListItemText primary="Hurricanes" />
-        </div>
-      </ListItem>
-      <ListItem button>
-        <div className="Wake">
-          <ListItemText primary="Wake Forest" />
+          <ListItemText primary="Hornets" onClick={()=>{props.setTeam('Hornets')}}/>
         </div>
       </ListItem>
       <ListItem button>
         <div className="Knights">
-          <ListItemText primary="Charlotte Knights" />
+          <ListItemText primary="Charlotte Knights" onClick={()=>{props.setTeam('Knights')}} />
         </div>
       </ListItem>
 
     </List>
   );
 }
+export default Sidebar;
