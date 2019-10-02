@@ -17,7 +17,10 @@ RSSController.get("/", JWTVerifier, function (req, res) {
   const teamSelection = 'https://www.panthers.com/rss/news'
   // teamSelected === 'panthers'? (teamP):(teamNC)
   //const teamSelection = req.body.team
-
+  db.RSS.deleteOne({}, function (err) {
+    console.log('cleared db')
+    if (err) console.log(err)
+  });
   Feed.load( teamSelection, function (err, rss) {
   //Confirms feed.load works but not database creation  
   // console.log(rss);
