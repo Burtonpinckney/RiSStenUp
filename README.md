@@ -11,7 +11,7 @@ Demo: https://fast-ravine-51004.herokuapp.com/
 
 ## How it Works
 
-First you must Log In, or create a Log In using your email address if you have not already done so. Then choose the team you wish to get information on using the list on the left side of the screen. The application will pull in the latest articles from the team web site when the team name is clicked. Then click on the article of your choice. The print version of the article will appear in the box on the right of the web page. You can simply read the article or you can choose to use the audio version by clicking on the text of the article. This will trigger the computer audio to read the article aloud for you. The program uses the RSS feed from the team web site to do this. Ideal if you are in a situation where reading the article is not possible due to other activities.
+First you must Log In, or create a Log In using your email address if you have not already done so. Then choose the team you wish to get information for using the list on the left side of the screen. The application will pull in the latest articles from the team web site when the team name is clicked. Then click on the article of your choice. The print version of the article will appear in the box on the right of the web page. You can simply read the article or you can choose to use the audio version by clicking on the text of the article. This will trigger the computer audio to read the article aloud for you. The program uses the RSS feed from the team web site to do this. Ideal if you are in a situation where reading the article is not possible due to other activities.
 
 ## Programs
 
