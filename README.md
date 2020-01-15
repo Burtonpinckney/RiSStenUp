@@ -16,3 +16,7 @@ First you must Log In, or create a Log In using your email address if you have n
 ## Programs
 
 RisstenUP is a React based program that also uses Mongoose, Javascript, HTML, CSS, JSON, Bootstrap, Axios, Express, and Cheerio (as well as a few others).
+
+## Bugs
+
+Need to add a 'Play', 'Pause' and 'Stop' to the audio. Currently no way to stop audio from finishing reading the article.
