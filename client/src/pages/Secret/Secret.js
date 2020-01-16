@@ -164,9 +164,6 @@ class Secret extends Component {
                       {this.state.activeArticle.article_body}
                     </p>
                   </div>
-                  <div classname="infoBox">
-                    <p>Click article text for audio</p>
-                  </div>
                 </div>
               </div>
             </div>
