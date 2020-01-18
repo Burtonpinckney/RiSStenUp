@@ -19,6 +19,8 @@ First you must Log In, or create a Log In using your email address if you have n
 
 ## Log In Page
 
+![RissLog](https://user-images.githubusercontent.com/51678140/72665724-09017b80-39d9-11ea-91c0-7fc2d5619e2d.png)
+
 ## Programs
 
 RisstenUP is a React based program that also uses Mongoose, Javascript, HTML, CSS, JSON, Bootstrap, Axios, Express, and Cheerio (as well as a few others).
