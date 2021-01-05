@@ -11,7 +11,7 @@
     "morgan": "^1.9.1",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.3",
     "responsivevoice": "^0.4.1",
     "rss-to-json": "^1.0.4"
